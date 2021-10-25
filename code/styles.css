@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+.grid {
+    width: 206px;
+    height: 206px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+  }
+  
+  .grid div {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .snake {
+    background-color: blue;
+  }
+  
+  .apple {
+    background-color: purple;
+  }
