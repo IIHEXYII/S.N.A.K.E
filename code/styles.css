@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
 .container {
         position: absolute;
         left: 50%;
@@ -15,18 +19,57 @@
     height: 206px;
     display: flex;
     flex-wrap: wrap;
-    border-style: solid;
+    border: 3px solid #000000;
+    background: white;
   }
   
   .grid div {
     width: 20px;
     height: 20px;
   }
-  
+
+
   .snake {
-    background-color: blue;
+    box-shadow:inset 1px 1px 1px 1px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
   }
   
   .apple {
-    background-color: purple;
+    box-shadow: 1px 2px 0px 0px #8a2a21;
+	background-color:#c62d1f;
+    border-radius: 40%;
   }
+
+ /* ---------- BUTTON ---------- */
+ .buttonContainer {
+     display: flex;
+     width: 100%;
+ }
+  .start {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+    margin: 10px auto;
+}
+.start:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.start:active {
+	position:relative;
+	top:1px;
+}
+/* ---------- BUTTON END ---------- */
+
+.info {
+    text-align:center;
+}
